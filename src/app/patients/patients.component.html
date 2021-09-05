@@ -1,1 +1,9 @@
-<p>patients works!</p>
+<div>
+    <ul>
+        <li *ngFor="let patient of patients">
+            <span class="patient-name">{{patient.firstName}} {{patient.lastName}}</span>
+            <h3>Condition: {{patient.condition}}</h3>
+            <h4>Age: {{patient.age}}</h4>
+        </li>
+    </ul>
+</div>
